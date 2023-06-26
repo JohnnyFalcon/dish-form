@@ -1,0 +1,87 @@
+.Box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 45rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 2.5s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
+  transition: none;
+  text-rendering: optimizeSpeed;
+  flex-direction: column;
+}
+
+.Typography {
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  background: #000000;
+  background: linear-gradient(to right, #a38358 0%, #030303 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.time-input {
+  font-size: 1rem;
+  color: #424242;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  width: 15rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(29%) sepia(0%) saturate(295%) hue-rotate(165deg)
+    brightness(85%) contrast(94%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+input[type="time"]::-webkit-calendar-picker-indicator:focus,
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  filter: invert(54%) sepia(49%) saturate(351%) hue-rotate(355deg)
+    brightness(89%) contrast(82%);
+}
+.time-input:hover {
+  border-color: black;
+}
+.time-input:focus {
+  outline: none;
+  border-color: #a38358;
+}
+
+.time-label {
+  display: flex;
+  flex-direction: column;
+  color: #755e42;
+  font-family: Poppins, sans-serif;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Box {
+    width: 23rem;
+  }
+}
