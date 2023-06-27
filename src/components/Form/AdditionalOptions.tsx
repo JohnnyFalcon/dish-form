@@ -1,5 +1,5 @@
 import { FormControlSt, TextFieldStyled } from "./styles";
-import React from "react";
+
 type Props = {
   dishType: string;
   register: any;
