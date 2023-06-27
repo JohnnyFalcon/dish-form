@@ -3,10 +3,10 @@ In this project, website user is required to fill in all inputs. Dish type input
 
 ![image](https://github.com/JohnnyFalcon/dish-form/assets/82409487/12eff18d-1f3c-4138-9d5a-4f821df9d98b)
 
-# Build With:
+## Build With:
 * React/Typescript
 * React hook form - https://react-hook-form.com/
-* Fetching data with axios
+* Posting data with axios
 * Styled with Material UI
 
 
