@@ -23,7 +23,7 @@
   padding-bottom: 40px;
   text-transform: uppercase;
   background: #000000;
-  background: linear-gradient(to right, #a38358 0%, #030303 100%);
+  background: linear-gradient(to right, rgb(163, 131, 88) 0%, #030303 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -1,4 +1,3 @@
-
 import {
   Box,
   MenuItem,
@@ -41,7 +40,7 @@ const Form = () => {
         setTime("00:00:00");
         setDishType("");
         setSubmitted(false);
-      }, 3000);
+      }, 5000);
     }
   };
   return (
